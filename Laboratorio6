@@ -1,0 +1,190 @@
+# 1. Algoritmo para Preparar un Té: Este algoritmo describe los pasos para preparar un té y lo implementamos en Python.
+
+Algoritmo:
+
+Inicio
+- Reunir los materiales: Agua, bolsita de té/hojas de té, hervidor/olla, taza, azúcar/leche (opcional).
+- Calentar el agua: Hervir agua utilizando un hervidor u olla.
+- Agregar el té: Colocar la bolsita de té o las hojas de té en la taza.
+- Verter agua caliente: Verter el agua hirviendo sobre la bolsita de té/hojas de té en la taza.
+- Dejar reposar: Dejar reposar el té durante el tiempo deseado (usualmente 3-5 minutos).
+- Retirar el té: Sacar la bolsita de té o colar las hojas de té.
+- Agregar extras (opcional): Agregar azúcar, leche u otros ingredientes deseados.
+- Revolver: Revolver el té para mezclar los ingredientes.
+- ¡Disfrutar!
+
+def preparar_te():
+  print("Inicio")
+  print("Reuniendo los materiales: Agua, bolsita de té, hervidor, taza, azúcar/leche (opcional)")
+  print("Calentando el agua")
+  print("Agregando la bolsita de té a la taza")
+  print("Vertiendo agua caliente")
+  print("Dejando reposar el té durante 3-5 minutos")
+  print("Retirando la bolsita de té")
+  print("Agregando azúcar/leche (opcional)")
+  print("Revolviendo")
+  print("¡Disfrutar!")
+
+preparar_te()
+
+# Cálculo del Promedio de Notas: Utilizar variables y tipos de datos para almacenar las notas de un estudiante, y un operador aritmético para calcular el promedio.
+
+Inicio
+
+Declarar variables
+
+Solicitar al usuario que ingrese las notas y guardarlas en las variables correspondientes.
+
+Calcular la suma de las notas
+
+Calcular el promedio
+
+Mostrar el promedio al usuario.
+
+# Declarar variables
+nota1 = 0
+nota2 = 0
+nota3 = 0
+suma_notas = 0
+promedio = 0
+cantidad_notas = 3  # En este caso, se promedian 3 notas
+print("Aplicacion para calcular el promedio de tus notas")
+# Solicitar al usuario que ingrese las notas
+nota1 = float(input("Ingrese la primera nota: "))
+nota2 = float(input("Ingrese la segunda nota: "))
+nota3 = float(input("Ingrese la tercera nota: "))
+
+# Calcular la suma de las notas
+suma_notas = nota1 + nota2 + nota3
+
+# Calcular el promedio
+promedio = suma_notas / cantidad_notas
+
+# Mostrar el promedio al usuario
+print("El promedio de las notas es:", promedio)
+
+Verificar si un Número es Par o Impar: Utiliza condicionales para verificar si un número es par o impar, y operadores para realizar el cálculo.
+Algoritmo:
+Inicio
+
+Declarar una variable numero de tipo entero para almacenar el número a verificar.
+Solicitar al usuario que ingrese un número y guardarlo en la variable numero.
+Verificar si el número es par o impar: Si el residuo de la división de numero entre 2 es igual a 0, entonces el número es par. Si no, el número es impar.
+Mostrar un mensaje indicando si el número es par o impar. Fin
+Elemento de lista
+
+print("Aplicacion para verificar si un numero es par o impar")
+# Solicitar al usuario que ingrese un número
+numero = int(input("Ingresa un número: "))
+
+# Verificar si el número es par o impar
+if numero % 2 == 0:
+  print(numero, "es un número par")
+else:
+  print(numero, "es un número impar")
+
+Bucle for para Imprimir Números del 1 al 5: Usar un bucle for para mostrar los números del 1 al 5 y combinar los operadores aritméticos para mostrar si son pares o impares.
+Algoritmo
+Inicio
+Utilizar un bucle for para iterar a través de los números del 1 al 5.
+Para cada número:
+Imprimir el número.
+Si el número es divisible entre 2 (residuo 0), entonces imprimir "par".
+Si no, imprimir "impar".
+Fin
+
+# Bucle for para imprimir números del 1 al 5
+for numero in range(1, 6):  # range(1, 6) genera números del 1 al 5
+  print("Número:", numero)
+
+  # Verificar si el número es par o impar
+  if numero % 2 == 0:
+    print("par")
+  else:
+    print("impar")
+
+Convertir Grados Celsius a Fahrenheit: Usar una función para convertir grados Celsius a Fahrenheit. La fórmula para la conversión es Fahrenheit = (Celsius * 9/5) + 32.
+
+# Función para convertir Celsius a Fahrenheit
+def celsius_a_fahrenheit(celsius):
+  fahrenheit = (celsius * 9/5) + 32
+  return fahrenheit
+
+# Solicitar al usuario la temperatura en Celsius
+celsius = float(input("Ingresa la temperatura en grados Celsius: "))
+
+# Convertir a Fahrenheit usando la función
+fahrenheit = celsius_a_fahrenheit(celsius)
+
+# Imprimir el resultado
+print("La temperatura en grados Fahrenheit es:", fahrenheit)
+
+Contar la Cantidad de Vocales en una Cadena de Texto: Utilizar un bucle for y una condicional para contar cuántas vocales hay en una cadena de texto ingresada por el usuario.
+Algoritmo:
+
+Inicio
+
+Declarar una variable texto para almacenar la cadena de texto ingresada por el usuario.
+
+Declarar una variable contador_vocales e inicializarla en 0. Esta variable almacenará la cantidad de vocales encontradas.
+
+Solicitar al usuario que ingrese una cadena de texto y guardarla en la variable texto.
+
+Convertir la cadena de texto a minúsculas para que la comparación de vocales no sea sensible a mayúsculas/minúsculas.
+
+Utilizar un bucle for para iterar a través de cada carácter de la cadena de texto.
+
+Para cada carácter: Si el carácter es una vocal (a, e, i, o, u), entonces incrementar el contador_vocales en 1.
+
+Imprimir el valor de contador_vocales para mostrar la cantidad de vocales encontradas.
+
+Fin
+
+# Solicitar al usuario que ingrese una cadena de texto
+texto = input("Ingresa una cadena de texto u oracion: ")
+
+# Convertir la cadena de texto a minúsculas
+texto = texto.lower()
+
+# Inicializar el contador de vocales
+contador_vocales = 0
+
+# Iterar a través de cada carácter de la cadena
+for caracter in texto:
+  # Verificar si el carácter es una vocal
+  if caracter in "aeiou":
+    contador_vocales += 1
+
+# Imprimir la cantidad de vocales encontradas
+print("La cantidad de vocales en la cadena es:", contador_vocales)
+
+Calcular el Factorial de un Número: Usar un bucle while para calcular el factorial de un número ingresado por el usuario. El factorial de un número n (n!) es el producto de todos los números enteros positivos menores o iguales a n.
+Algoritmo:
+
+Inicio
+
+Declarar una variable numero para almacenar el número ingresado por el usuario.
+
+Declarar una variable factorial e inicializarla en 1. Esta variable almacenará el resultado del factorial.
+
+Solicitar al usuario que ingrese un número entero positivo y guardarlo en la variable numero.
+
+Mientras numero sea mayor que 1: Multiplicar factorial por numero. Decrementar numero en 1.
+
+Imprimir el valor de factorial que representa el factorial del número ingresado.
+
+Fin
+
+# Solicitar al usuario que ingrese un número
+numero = int(input("Ingresa un número entero positivo: "))
+
+# Inicializar el factorial
+factorial = 1
+
+# Calcular el factorial usando un bucle while
+while numero > 1:
+  factorial *= numero  # Equivalente a: factorial = factorial * numero
+  numero -= 1  # Equivalente a: numero = numero - 1
+
+# Imprimir el factorial
+print("El factorial del número es:", factorial)
